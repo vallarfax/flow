@@ -2,3 +2,8 @@
 
 - name: Run RabbitMQ container
   docker: image=tutum/rabbitmq ports="5672:5672,55672:55672" state=present env="RABBITMQ_PASS=password"
+
+- name: copy nginx config
+  copy: src=nginx-site dest=/etc/nginx/sites-enabled/flow
+  notify:
+    - restart nginx
