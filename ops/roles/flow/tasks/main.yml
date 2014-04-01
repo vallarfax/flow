@@ -7,3 +7,9 @@
   copy: src=nginx-site dest=/etc/nginx/sites-enabled/flow
   notify:
     - restart nginx
+
+- name: Install pip for Python3
+  apt: pkg=python3-pip state=present
+
+- name: Install virtualenv
+  apt: pkg=python-virtualenv state=present

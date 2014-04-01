@@ -4,7 +4,7 @@ from kombu import Connection
 context = {
     'host': '192.168.33.190',
     'user': 'admin',
-    'password': 'JtPumIoc0RnB',
+    'password': 'password',
     'port': 5672,
 }
 connection_string = 'amqp://{user}:{password}@{host}:{port}//'.format(**context)
