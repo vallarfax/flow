@@ -6,7 +6,7 @@ context = {
     'user': 'admin',
     'password': 'JtPumIoc0RnB',
     'port': 5672,
-    }
+}
 connection_string = 'amqp://{user}:{password}@{host}:{port}//'.format(**context)
 
 
