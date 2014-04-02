@@ -1,0 +1,29 @@
+{
+  "name": "ws-client",
+  "version": "0.0.0",
+  "description": "basic websocket client",
+  "main": "js/app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vallarfax/flow"
+  },
+  "author": "Chris McCollister",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vallarfax/flow/issues"
+  },
+  "homepage": "https://github.com/vallarfax/flow",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-mocha": "^0.4.1",
+    "gulp-react": "^0.3.1",
+    "should": "^3.2.0",
+    "sinon": "^1.9.0"
+  }
+}
