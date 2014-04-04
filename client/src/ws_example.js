@@ -18,7 +18,7 @@ var MessageFormView = React.createClass({
 		return (
 			<form className="form-inline" role="form">
 				<div className="form-group">
-					<input type="text" className="form-control" placeholder="message" ref="message"/>
+					<input type="text" className="form-control" placeholder="Send a message..." ref="message"/>
 				</div>
 				<button type="button" className="btn btn-default" onClick={this.handleSend}>Send</button>
 			</form>
