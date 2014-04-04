@@ -3,7 +3,7 @@
  */
 
 
-var MessageView = React.createClass({
+var MessageFormView = React.createClass({
 	handleSend: function() {
 		var message = this.refs.message.getDOMNode().value.trim();
 
@@ -41,7 +41,7 @@ var AppView = React.createClass({
 		return (
 			<div className='container'>
 				<ConnectionStatusView status={this.props.status} />
-				<MessageView sendMessage={this.props.sendMessage} />
+				<MessageFormView sendMessage={this.props.sendMessage} />
 			</div>
 		);
 	}
