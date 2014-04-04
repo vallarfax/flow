@@ -9,9 +9,9 @@ var paths = {
 	dest: 'js',
 };
 
-gulp.task('build', function() {
-	// Build
-});
+// gulp.task('build', function() {
+// 	// Build
+// });
 
 gulp.task('test', function() {
 	return gulp.src([paths.tests], { read: false })
