@@ -1,3 +1,7 @@
+"""
+Some code and ideas taken from: https://github.com/mind1master/rainfall
+"""
+
 import signal
 import asyncio
 
@@ -19,6 +23,10 @@ class BaseWsHandler:
     @asyncio.coroutine
     def on_message(self, message):
         pass
+
+    @asyncio.coroutine
+    def send_message(self, message):
+        yield from self.protocol.send(message)
 
     @asyncio.coroutine
     def _check_messages(self):

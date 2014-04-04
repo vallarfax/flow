@@ -18,6 +18,7 @@ class MyHandler(BaseWsHandler):
     @asyncio.coroutine
     def on_message(self, message):
         print('< {}'.format(message))
+        yield from self.send_message('> {}'.format(message))
 
 
 if __name__ == '__main__':
