@@ -3,13 +3,13 @@
 - name: Run RabbitMQ container
   docker: image=tutum/rabbitmq ports="5672:5672,55672:55672" state=present env="RABBITMQ_PASS=password"
 
-- name: copy nginx config
+- name: Copy Nginx config
   copy: src=nginx-site dest=/etc/nginx/sites-enabled/flow
   notify:
-    - restart nginx
+    - Restart Nginx
 
 - name: Install pip for Python3
   apt: pkg=python3-pip state=present
 
-- name: Install virtualenv
-  apt: pkg=python-virtualenv state=present
+- name: Install Python modules
+  pip: requirements=/vagrant/server/requirements.txt executable=pip3

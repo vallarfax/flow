@@ -12,4 +12,4 @@
   file: path=/etc/nginx/sites-enabled/default state=absent
   tags: nginx
   notify:
-    - restart nginx
+    - Restart Nginx
